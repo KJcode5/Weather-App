@@ -1,5 +1,3 @@
-// Reference - https://www.youtube.com/watch?v=WZNG8UomjSI
-
 //test
 console.log("Welcome to my Weather App");
 
@@ -25,7 +23,7 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name, icon, description, temp, humidity, speed);
-        document.querySelector(".city").innerText = "Weather in " + name;
+        document.querySelector(".city").innerText = "The weather in " + name + " is:";
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
@@ -44,6 +42,8 @@ document.querySelector(".search button")
     weather.search();
 });
 
+
+// Reference - https://www.youtube.com/watch?v=WZNG8UomjSI
 
 // https://api.openweathermap.org/data/2.5/weather?q=London&appid=36d755af0e6e80423f11491bb310f6d3
 
